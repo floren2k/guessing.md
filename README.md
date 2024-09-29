@@ -4,7 +4,7 @@ guessing game
 
 '''Mermaid
   Flowchart TD  
-  A--> B;
-  B--> C;
-  C--> D; 
+  A-->B;
+  B-->C;
+  C-->D; 
   '''
