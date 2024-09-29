@@ -2,9 +2,9 @@
 guessing game 
 
 
-''' mermaid
-Flowchart TD 
-  A-->B;
-  B-->C;
-  C-->D;
+''' mermaid  
+Flowchart TD  
+  A-->B;  
+  B-->C;  
+  C-->D;  
 '''
