@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="guessing game"/>
+        <attribute name="authors" value="919az"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-29 04:23:29 PM"/>
+        <attribute name="created" value="OTE5YXo7SEFOOzIwMjQtMDktMjk7MDI6MTc6NDcgUE07MTg5MA=="/>
+        <attribute name="edited" value="OTE5YXo7SEFOOzIwMjQtMDktMjk7MDQ6MjM6MjkgUE07MTsxOTk3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="secret" type="Integer" array="False" size=""/>
+            <declare name="guess" type="Integer" array="False" size=""/>
+            <assign variable="secret" expression="random (20) + 1"/>
+            <output expression="&quot;please enter a guess between 1 and 20&quot;" newline="True"/>
+            <do expression="guess!= secret">
+                <input variable="guess"/>
+                <if expression="guess &gt; secret">
+                    <then>
+                        <output expression="&quot;Guess is too HIGH&quot;" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="guess &lt; secret">
+                    <then>
+                        <output expression="&quot; Guess is too LOw&quot;" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </do>
+            <output expression="&quot; Correct&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
